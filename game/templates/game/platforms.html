@@ -1,0 +1,13 @@
+{%extends "game/base.html" %}
+
+{% block title %}
+    Studios
+{% endblock %}
+
+{% block body %}
+    <h1>Platforms</h1>
+    {% for platform in platforms %}
+        <p>{{platform}}</p>
+    {% endfor %}
+    
+{% endblock %}

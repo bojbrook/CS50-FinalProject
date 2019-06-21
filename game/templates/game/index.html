@@ -5,5 +5,14 @@
 {% endblock %}
 
 {% block body %}
+    <a href="{% url 'studios_view'%}" >Studios</a>
+    <a href="{% url 'platforms_view'%}" >Platforms</a>
     <h1>Up and coming games</h1>
+    {% for game in games %}
+        <img src={{game.cover}} height="150" width="150"/>
+        <br>
+        <a href="{% url 'game_view' game.id %}">{{game.title}}</a><br>
+        <p class="release_time">{{game.release_date}}</p>
+        <p class="time">{{game.days_until}} days</p>
+    {% endfor %} 
 {% endblock %}
