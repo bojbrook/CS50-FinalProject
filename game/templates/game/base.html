@@ -1,9 +1,16 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'game/style.css' %}"/>
     </head>
     <body>
+        <a href="{% url 'index'%}">Home</a>
+        <a href="{% url 'studios_view'%}" >Studios</a>
+        <a href="{% url 'platforms_view'%}" >Platforms</a>
         {% block body %}
         {% endblock %}
     </body>

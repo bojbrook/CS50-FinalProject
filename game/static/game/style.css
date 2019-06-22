@@ -1,0 +1,19 @@
+body {
+  background: darkgrey;
+}
+
+.display_game {
+  width: 20%;
+  padding: 20px;
+  margin: 15px;
+  border-style: solid;
+}
+.display_game img {
+  height: 200px;
+  width: 200px;
+}
+.display_game .time {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

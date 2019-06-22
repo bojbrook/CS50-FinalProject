@@ -7,7 +7,7 @@
 {% block body %}
     <h1>Platforms</h1>
     {% for platform in platforms %}
-        <p>{{platform}}</p>
+        <a href="{% url 'platform_info_view' platform.id %}">{{platform}}</a><br>
     {% endfor %}
     
 {% endblock %}

@@ -1,0 +1,21 @@
+$primary-color: darkgrey;
+
+body {
+    background: $primary-color;
+}
+
+.display_game{
+    width: 20%;
+    padding: 20px;
+    margin: 15px;
+    border-style: solid;
+
+    img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .time{
+        font-weight: bold;
+    }
+}

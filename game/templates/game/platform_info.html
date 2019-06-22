@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Up and coming games</h1>
+    <h1 style="text-align: center;">{{platform}}</h1>
     {% for game in games %}
         <div class='display_game'>
             <img src={{game.cover}} />

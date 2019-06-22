@@ -24,4 +24,4 @@ env/
 orders/cases.py
 
 # sass files
-orders/static/orders/*.map
+game/static/game/*.map

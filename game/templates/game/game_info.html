@@ -5,7 +5,9 @@
 {% endblock %}
 
 {% block body %}
+    <a href="{% url 'index'%}">Home</a> 
     <h1>{{game.title}}</h1>
+    <img src="{{game.cover_url}}" alt="game cover" height="150" width="150">
     <p>Studio: {{game.studio}}</p>
     <p>Release: {{game.release_date}}</p>
     <p>Platform:

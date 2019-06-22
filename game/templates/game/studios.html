@@ -4,9 +4,9 @@
     Studios
 {% endblock %}
 
-{% block body %}
+{% block body %}    
     <h1>Studios</h1>
     {% for studio in studios %}
-        <p>{{studio}}</p>
+        <a href="{% url 'studio_info_view' studio.url_name %}">{{studio.name}}</a><br>
     {% endfor %}
 {% endblock %}
