@@ -1,3 +1,3 @@
-# Final EDX Project
+# Game Count Down Webpage
 
-A website displaying game titles in development and how long until they are released. Created using Django
+Webpage for new and upcoming games being released. Using Django, SQL, CSS the webapge displays new games and the number of days until they are to be released.
